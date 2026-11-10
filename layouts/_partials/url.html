@@ -1,0 +1,4 @@
+{{- /* Turn a site-absolute path (/news/) into a URL that also works when the site lives in a sub-folder. */ -}}
+{{- $u := . -}}
+{{- if and (hasPrefix $u "/") (not (hasPrefix $u "//")) -}}{{- $u = strings.TrimPrefix "/" $u | relURL -}}{{- end -}}
+{{- return $u -}}

@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-logo" href="{{ "" | relURL }}" aria-label="MAPME – back to homepage">
+      <img src="{{ "images/mapme-logo-big.svg" | relURL }}" width="212" height="68" alt="MAPME – {{ site.Params.tagline }}">
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+    <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul>
+        {{- $page := . -}}
+        {{- range site.Menus.main }}
+        {{- $active := or ($page.IsMenuCurrent "main" .) (and (eq .Identifier "news") (in (slice "blog" "case-studies" "sdi") $page.Section)) (and (eq .Identifier "news") (in (slice "taxonomy" "term") $page.Kind)) }}
+        <li><a href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}{{ if eq .Identifier "contact" }} class="nav-cta"{{ end }}>{{ .Name }}</a></li>
+        {{- end }}
+      </ul>
+    </nav>
+  </div>
+</header>

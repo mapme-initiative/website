@@ -1,0 +1,7 @@
+<div class="step">
+<span class="step__num">{{ .Get "num" }}</span>
+<div class="step__body">
+{{ with .Get "title" }}<p class="step__title">{{ . }}</p>{{ end }}
+{{ partial "inner.html" (dict "inner" .Inner "page" .Page) }}
+</div>
+</div>

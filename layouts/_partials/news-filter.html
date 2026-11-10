@@ -1,0 +1,7 @@
+<p class="filter" aria-label="Filter news by category">
+  <a class="chip{{ if eq .Kind "section" }} chip--active{{ end }}" href="{{ "news/" | relURL }}">All</a>
+  {{- $cur := . -}}
+  {{- range site.Taxonomies.categories.Alphabetical }}
+  <a class="chip{{ if eq $cur.RelPermalink .Page.RelPermalink }} chip--active{{ end }}" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+  {{- end }}
+</p>

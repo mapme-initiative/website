@@ -1,0 +1,3 @@
+{{- /* Render the markdown inside a shortcode. dict: inner, page */ -}}
+{{- $html := .inner | .page.RenderString (dict "display" "block") -}}
+{{- return (replaceRE `\n\s*\n` "\n" $html | safeHTML) -}}

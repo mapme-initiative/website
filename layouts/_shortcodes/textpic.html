@@ -1,0 +1,12 @@
+{{- $imgs := slice -}}
+{{- with .Get "image" }}{{ $imgs = slice . }}{{ end -}}
+{{- with .Get "images" }}{{ $imgs = split . "," }}{{ end -}}
+<div class="textpic textpic--{{ .Get "side" | default "right" }}{{ if eq (.Get "layout") "wrap" }} textpic--wrap{{ end }}">
+<figure class="textpic__media">
+{{ if gt (len $imgs) 1 }}{{ partial "slider.html" $imgs }}{{ else }}{{ range $imgs }}<a href="{{ partial "url.html" . | safeURL }}" data-lightbox>{{ partial "img.html" (dict "src" . "alt" ($.Get "alt")) }}</a>{{ end }}{{ end }}
+{{ with .Get "caption" }}<figcaption>{{ . | $.Page.RenderString }}</figcaption>{{ end }}
+</figure>
+<div class="textpic__text">
+{{ partial "inner.html" (dict "inner" .Inner "page" .Page) }}
+</div>
+</div>

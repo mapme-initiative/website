@@ -1,0 +1,15 @@
+{{ define "main" }}
+{{- $all := partial "news-pages.html" . -}}
+{{- $paginator := .Paginate $all }}
+<div class="page-content page-content--plain">
+<header class="page-title">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ partial "news-filter.html" . }}
+</header>
+<div class="post-grid">
+  {{ range $paginator.Pages }}{{ partial "post-card.html" . }}{{ end }}
+</div>
+{{ partial "pagination.html" $paginator }}
+</div>
+{{ end }}

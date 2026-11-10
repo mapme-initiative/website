@@ -1,0 +1,7 @@
+<div class="slider" data-slider>
+<div class="slider__track">
+{{ range . }}<div class="slider__slide">{{ partial "img.html" (dict "src" . "alt" "") }}</div>{{ end }}
+</div>
+<button class="slider__btn slider__btn--prev" type="button" aria-label="Previous slide" data-slider-prev>‹</button>
+<button class="slider__btn slider__btn--next" type="button" aria-label="Next slide" data-slider-next>›</button>
+</div>

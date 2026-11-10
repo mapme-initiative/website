@@ -1,0 +1,5 @@
+{{- $u := .Destination -}}
+{{- $ext := or (hasPrefix $u "http://") (hasPrefix $u "https://") -}}
+{{- $file := hasPrefix $u "/files/" -}}
+<a href="{{ partial "url.html" $u | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if or $ext $file }} target="_blank" rel="noopener"{{ end }}>{{ .Text }}</a>
+{{- /**/ -}}

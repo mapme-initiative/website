@@ -1,0 +1,4 @@
+<aside class="callout{{ with .Get "style" }} callout--{{ . }}{{ end }}">
+{{ with .Get "title" }}<p class="callout__label">{{ . }}</p>{{ end }}
+{{ partial "inner.html" (dict "inner" .Inner "page" .Page) }}
+</aside>

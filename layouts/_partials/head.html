@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ site.Title }} – {{ site.Params.tagline }}{{ else }}{{ .Title }} – {{ site.Title }}{{ end }}</title>
+{{ $desc := .Description | default .Params.lead | default site.Params.description | plainify -}}
+<meta name="description" content="{{ $desc | truncate 200 }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta name="theme-color" content="#0B8584">
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:title" content="{{ .Params.headline | default .Title | .RenderString | plainify }}">
+<meta property="og:description" content="{{ $desc | truncate 200 }}">
+<meta property="og:type" content="{{ if .Params.date }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+{{ with .Params.image | default .Params.thumbnail }}<meta property="og:image" content="{{ strings.TrimPrefix "/" . | absURL }}">{{ end }}
+<link rel="icon" href="{{ "images/mapme-logo.png" | relURL }}" type="image/png">
+<link rel="apple-touch-icon" href="{{ "images/mapme-logo.png" | relURL }}">
+<link rel="preload" href="{{ "fonts/Rubik_400.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+{{ with resources.Get "css/main.css" | resources.ExecuteAsTemplate "css/main.css" . | minify | fingerprint }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}

@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{- $paginator := .Paginate .Pages.ByDate.Reverse }}
+<div class="page-content page-content--plain">
+<header class="page-title">
+  <p class="eyebrow">{{ if eq .Data.Plural "tags" }}Tag{{ else }}Category{{ end }}</p>
+  <h1>{{ .Title }}</h1>
+  {{ partial "news-filter.html" . }}
+</header>
+<div class="post-grid">
+  {{ range $paginator.Pages }}{{ partial "post-card.html" . }}{{ end }}
+</div>
+{{ partial "pagination.html" $paginator }}
+</div>
+{{ end }}

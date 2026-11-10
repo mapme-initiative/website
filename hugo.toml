@@ -1,0 +1,87 @@
+# MAPME website – Hugo configuration
+baseURL = "https://www.mapme-initiative.org/"
+locale = "en"
+languageCode = "en"
+title = "MAPME"
+enableRobotsTXT = true
+disableKinds = ["RSS"]
+
+[params]
+  description = "MAPME is an initiative to provide free and open access to GIS tools and earth observation in international development cooperation."
+  tagline = "maps for planning, monitoring & evaluation"
+  contactEmail = "johannes.schielein@kfw.de"
+  contactPhone = "069 74310"
+  linkedin = "https://www.linkedin.com/company/mapme-initiative/"
+  youtube = "https://www.youtube.com/@MAPME_initiative"
+  newsletterURL = "https://mapme-initiative.us7.list-manage.com/subscribe?u=c70c419e6b487f4b4f280ec53&id=ecf1a8fcc2"
+  # Optional: URL of a form backend (e.g. Formspree). Empty = forms open the visitor's e-mail program.
+  formEndpoint = ""
+
+[pagination]
+  pagerSize = 12
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[permalinks.term]
+  categories = "/blog/kategorie/:slug/"
+  tags = "/blog/tag/:slug/"
+[permalinks.taxonomy]
+  categories = "/blog/kategorie/"
+  tags = "/blog/tag/"
+
+[markup.goldmark.renderer]
+  unsafe = true            # allow the occasional inline HTML (<u>, <br>, <sub>)
+[markup.goldmark.parser.attribute]
+  block = true             # allows {.lead} / {.center} lines below a paragraph
+  title = true
+
+[[menus.main]]
+  name = "Community"
+  pageRef = "/mapme-community"
+  weight = 10
+[[menus.main]]
+  name = "News"
+  identifier = "news"
+  pageRef = "/blog"
+  weight = 20
+[[menus.main]]
+  name = "Projects"
+  pageRef = "/projects"
+  weight = 30
+[[menus.main]]
+  name = "Resources"
+  pageRef = "/ressources"
+  weight = 40
+[[menus.main]]
+  name = "Geo4Impact Event"
+  pageRef = "/geo4impact-2025"
+  weight = 50
+[[menus.main]]
+  name = "Contact Us"
+  identifier = "contact"
+  pageRef = "/contact-1"
+  weight = 60
+
+[[menus.footer]]
+  name = "Legal"
+  pageRef = "/legal"
+  weight = 10
+[[menus.footer]]
+  name = "Privacy"
+  pageRef = "/privacy"
+  weight = 20
+
+# Images live in static/images. Mounting that folder as an asset folder as well lets Hugo
+# create resized WebP versions automatically (see layouts/_partials/img.html).
+[[module.mounts]]
+  source = "assets"
+  target = "assets"
+[[module.mounts]]
+  source = "static/images"
+  target = "assets/images"
+
+[imaging]
+  quality = 82
+  resampleFilter = "Lanczos"

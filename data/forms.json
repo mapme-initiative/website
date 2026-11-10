@@ -1,0 +1,204 @@
+{
+  "contact": {
+    "subject": "MAPME contact request",
+    "submit": "Send",
+    "fields": [
+      {
+        "label": "First Name",
+        "type": "text",
+        "required": true,
+        "width": 4
+      },
+      {
+        "label": "Surname",
+        "type": "text",
+        "required": true,
+        "width": 4
+      },
+      {
+        "label": "Organisation",
+        "type": "text",
+        "required": false,
+        "width": 4
+      },
+      {
+        "label": "Email",
+        "type": "email",
+        "required": true,
+        "width": 12
+      },
+      {
+        "label": "Your message",
+        "type": "textarea",
+        "required": true,
+        "width": 12
+      },
+      {
+        "label": "Yes, please keep me updated with valuable information about MAPME and its development.",
+        "type": "checkbox",
+        "required": false,
+        "width": 12
+      }
+    ]
+  },
+  "contribution": {
+    "subject": "Geo4Impact 2025 contribution",
+    "submit": "Send",
+    "fields": [
+      {
+        "label": "Speaker First Name",
+        "type": "text",
+        "required": true,
+        "width": 3
+      },
+      {
+        "label": "Speaker Surname",
+        "type": "text",
+        "required": true,
+        "width": 3
+      },
+      {
+        "label": "Organisation",
+        "type": "text",
+        "required": true,
+        "width": 3
+      },
+      {
+        "label": "Other partners involved",
+        "type": "text",
+        "required": false,
+        "width": 3
+      },
+      {
+        "label": "Email",
+        "type": "email",
+        "required": true,
+        "width": 6
+      },
+      {
+        "label": "Telephone number",
+        "type": "tel",
+        "required": false,
+        "width": 6
+      },
+      {
+        "label": "Form of contribution",
+        "type": "select",
+        "required": true,
+        "width": 12,
+        "options": [
+          "Presentation of about 20 min",
+          "Poster"
+        ],
+        "help": "Please select the type of contribution you would like to make"
+      },
+      {
+        "label": "Contribution title",
+        "type": "textarea",
+        "required": true,
+        "width": 12
+      },
+      {
+        "label": "Short summary of maximum 100 words",
+        "type": "textarea",
+        "required": true,
+        "width": 12
+      },
+      {
+        "label": "Description of any material/specific set up needed",
+        "type": "text",
+        "required": false,
+        "width": 6
+      },
+      {
+        "label": "Any material you would like to share",
+        "type": "file",
+        "required": false,
+        "width": 6,
+        "help": "doc, docx, xls, xlsx, pdf, odt, ods, jpg, png, heif, heic"
+      },
+      {
+        "label": "Mode of participation",
+        "type": "select",
+        "required": true,
+        "width": 12,
+        "options": [
+          "In-person in Paris",
+          "Remote"
+        ]
+      },
+      {
+        "label": "Travelling funded by",
+        "type": "text",
+        "required": false,
+        "width": 12,
+        "help": "If you're facing funding challenges, please don't hesitate to reach out to us directly—we're here to help find solutions together."
+      },
+      {
+        "label": "Yes, please keep me updated with valuable information about MAPME and its development.",
+        "type": "checkbox",
+        "required": false,
+        "width": 12
+      }
+    ]
+  },
+  "register": {
+    "subject": "Geo4Impact 2025 registration",
+    "submit": "Send",
+    "intro": "By registering, you consent to the use of your personal data for event organization and communication purposes, in compliance with GDPR. Your data will not be shared without your consent. You can request access, changes, or deletion of your data by contacting a_lenaerts@cartong.org.",
+    "fields": [
+      {
+        "label": "First Name",
+        "type": "text",
+        "required": true,
+        "width": 3
+      },
+      {
+        "label": "Surname",
+        "type": "text",
+        "required": true,
+        "width": 3
+      },
+      {
+        "label": "Organisation",
+        "type": "text",
+        "required": true,
+        "width": 3
+      },
+      {
+        "label": "Your position",
+        "type": "text",
+        "required": true,
+        "width": 3
+      },
+      {
+        "label": "Email",
+        "type": "email",
+        "required": true,
+        "width": 12
+      },
+      {
+        "label": "Mode of attendance",
+        "type": "select",
+        "required": true,
+        "width": 12,
+        "options": [
+          "In-person in Paris",
+          "Remote"
+        ]
+      },
+      {
+        "label": "In which country do you reside?",
+        "type": "text",
+        "required": true,
+        "width": 12
+      },
+      {
+        "label": "Yes, please keep me updated with valuable information about MAPME and its development.",
+        "type": "checkbox",
+        "required": false,
+        "width": 12
+      }
+    ]
+  }
+}

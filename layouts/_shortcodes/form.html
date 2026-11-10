@@ -1,0 +1,34 @@
+{{- $id := .Get 0 -}}
+{{- $form := index hugo.Data.forms $id -}}
+{{- $endpoint := site.Params.formEndpoint -}}
+<form class="form" id="{{ $id }}" method="post" {{ if $endpoint }}action="{{ $endpoint }}" enctype="multipart/form-data"{{ else }}action="{{ printf "mailto:%s?subject=%s" ($form.recipient | default site.Params.contactEmail) (replace ($form.subject | default .Page.Title) " " "%20") | safeURL }}" enctype="text/plain"{{ end }}>
+{{ with $form.intro }}<p class="form__note">{{ . }}</p>{{ end }}
+<input type="hidden" name="Form" value="{{ $form.subject | default .Page.Title }}">
+<div class="form__grid">
+{{- range $i, $f := $form.fields }}
+{{- $name := $f.label | truncate 60 "" -}}
+{{- $fid := printf "%s-%d" $id $i }}
+{{- if and (eq $f.type "file") (not $endpoint) }}{{ continue }}{{ end }}
+<div class="form__field form__field--{{ $f.width | default 12 }}{{ if eq $f.type "checkbox" }} form__field--check{{ end }}">
+{{- if eq $f.type "checkbox" }}
+<label><input type="checkbox" name="{{ $name }}" value="yes"{{ if $f.required }} required{{ end }}> <span>{{ $f.label }}</span></label>
+{{- else }}
+<label for="{{ $fid }}">{{ $f.label }}{{ if $f.required }} <abbr title="required">*</abbr>{{ end }}</label>
+{{- if eq $f.type "textarea" }}
+<textarea id="{{ $fid }}" name="{{ $name }}" rows="5"{{ if $f.required }} required{{ end }}></textarea>
+{{- else if eq $f.type "select" }}
+<select id="{{ $fid }}" name="{{ $name }}"{{ if $f.required }} required{{ end }}>
+<option value="">Please select…</option>
+{{ range $f.options }}<option>{{ . }}</option>{{ end }}
+</select>
+{{- else }}
+<input id="{{ $fid }}" type="{{ $f.type | default "text" }}" name="{{ $name }}"{{ if $f.required }} required{{ end }}>
+{{- end }}
+{{ with $f.help }}<small>{{ . }}</small>{{ end }}
+{{- end }}
+</div>
+{{- end }}
+</div>
+<p class="form__actions"><button class="button button--primary" type="submit">{{ $form.submit | default "Send" }}</button></p>
+{{ if not $endpoint }}<p class="form__hint">Sending opens your e-mail program with the form contents. You can also write to us directly at <a href="mailto:{{ $form.recipient | default site.Params.contactEmail }}">{{ $form.recipient | default site.Params.contactEmail }}</a>.</p>{{ end }}
+</form>

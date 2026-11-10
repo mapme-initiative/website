@@ -1,0 +1,8 @@
+<section class="hero{{ if .Get "image" }} hero--image{{ end }}">
+<div class="hero__inner">
+<div class="hero__text">
+{{ partial "inner.html" (dict "inner" .Inner "page" .Page) }}
+</div>
+{{ with .Get "image" }}<figure class="hero__media">{{ partial "img.html" (dict "src" . "alt" "" "eager" true) }}</figure>{{ end }}
+</div>
+</section>

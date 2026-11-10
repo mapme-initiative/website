@@ -1,0 +1,4 @@
+<div class="gallery">
+{{ range split (.Get "images") "," }}<a href="{{ partial "url.html" . | safeURL }}" data-lightbox>{{ partial "img.html" (dict "src" . "alt" "" "sizes" "(min-width: 60rem) 25vw, 50vw") }}</a>
+{{ end }}
+</div>

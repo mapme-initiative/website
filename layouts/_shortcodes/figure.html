@@ -1,0 +1,5 @@
+{{- $src := .Get "src" -}}
+<figure class="figure">
+{{ with .Get "link" }}<a href="{{ partial "url.html" . | safeURL }}" class="figure__link" data-lightbox>{{ partial "img.html" (dict "src" $src "alt" ($.Get "alt")) }}</a>{{ else }}<a href="{{ partial "url.html" $src | safeURL }}" class="figure__link" data-lightbox>{{ partial "img.html" (dict "src" $src "alt" (.Get "alt")) }}</a>{{ end }}
+{{ with .Get "caption" }}<figcaption>{{ . | $.Page.RenderString }}</figcaption>{{ end }}
+</figure>

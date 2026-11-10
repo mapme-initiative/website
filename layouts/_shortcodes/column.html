@@ -1,0 +1,6 @@
+<div class="column">
+{{ with .Get "image" }}<figure class="column__media">{{ partial "img.html" (dict "src" . "alt" "") }}</figure>{{ end }}
+<div class="column__text">
+{{ partial "inner.html" (dict "inner" .Inner "page" .Page) }}
+</div>
+</div>

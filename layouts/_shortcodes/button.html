@@ -1,0 +1,4 @@
+{{- $href := .Get "href" -}}
+{{- $ext := or (hasPrefix $href "http") (hasPrefix $href "/files/") -}}
+<a class="button button--{{ .Get "style" | default "primary" }}{{ if .Get "wide" }} button--wide{{ end }}" href="{{ partial "url.html" $href | safeURL }}"{{ if $ext }} target="_blank" rel="noopener"{{ end }}>{{ .Inner | .Page.RenderString }}</a>
+{{- /**/ -}}

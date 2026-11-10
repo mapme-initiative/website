@@ -1,0 +1,7 @@
+<div class="card">
+{{ with .Get "image" }}<figure class="card__media">{{ partial "img.html" (dict "src" . "alt" "") }}</figure>{{ end }}
+<div class="card__body">
+{{ with .Get "title" }}<h3 class="card__title">{{ . }}</h3>{{ end }}
+{{ partial "inner.html" (dict "inner" .Inner "page" .Page) }}
+</div>
+</div>

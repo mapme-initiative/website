@@ -1,0 +1,20 @@
+{{- /* Responsive image. dict: src (required), alt, class, eager, sizes
+       Raster images in static/images are resized to WebP automatically; everything else is used as is. */ -}}
+{{- $src := .src -}}
+{{- $res := false -}}
+{{- if hasPrefix $src "/images/" }}{{ with resources.Get (strings.TrimPrefix "/" $src) }}{{ if in (slice "jpeg" "png") .MediaType.SubType }}{{ $res = . }}{{ end }}{{ end }}{{ end -}}
+{{- $attrs := printf `alt="%s"` (.alt | default "" | htmlEscape) -}}
+{{- with .class }}{{ $attrs = printf `%s class="%s"` $attrs . }}{{ end -}}
+{{- if not .eager }}{{ $attrs = printf `%s loading="lazy" decoding="async"` $attrs }}{{ end -}}
+{{- if $res -}}
+  {{- $large := $res -}}
+  {{- if gt $res.Width 1600 }}{{ $large = $res.Resize "1600x webp" }}{{ else }}{{ $large = $res.Resize (printf "%dx webp" $res.Width) }}{{ end -}}
+  {{- if gt $res.Width 900 -}}
+    {{- $small := $res.Resize "800x webp" -}}
+    <img src="{{ $large.RelPermalink }}" srcset="{{ $small.RelPermalink }} 800w, {{ $large.RelPermalink }} {{ $large.Width }}w" sizes="{{ .sizes | default "(min-width: 64rem) 50vw, 100vw" }}" width="{{ $large.Width }}" height="{{ $large.Height }}" {{ $attrs | safeHTMLAttr }}>
+  {{- else -}}
+    <img src="{{ $large.RelPermalink }}" width="{{ $large.Width }}" height="{{ $large.Height }}" {{ $attrs | safeHTMLAttr }}>
+  {{- end -}}
+{{- else -}}
+  <img src="{{ partial "url.html" $src }}" {{ $attrs | safeHTMLAttr }}>
+{{- end -}}

@@ -1,0 +1,4 @@
+{{- $n := .Get "count" | default 6 | int -}}
+<div class="post-grid post-grid--latest">
+{{ range first $n (partial "news-pages.html" .) }}{{ partial "post-card.html" . }}{{ end }}
+</div>

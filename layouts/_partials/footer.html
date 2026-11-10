@@ -1,0 +1,32 @@
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <p class="site-footer__name">MAPME</p>
+      <p>{{ site.Params.tagline }}</p>
+    </div>
+    <nav class="site-footer__nav" aria-label="Footer navigation">
+      <ul>
+        {{- range site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{- end }}
+      </ul>
+    </nav>
+    <address class="site-footer__contact">
+      <p class="site-footer__heading">Contact</p>
+      <p>Phone: <a href="tel:{{ replace site.Params.contactPhone " " "" }}">{{ site.Params.contactPhone }}</a><br>
+      Email: <a href="mailto:{{ site.Params.contactEmail }}">{{ site.Params.contactEmail }}</a></p>
+    </address>
+    <div class="site-footer__social">
+      <p class="site-footer__heading">Follow Us</p>
+      {{ partial "social.html" . }}
+    </div>
+  </div>
+  <div class="site-footer__bottom">
+    <p>©MAPME-Initiative</p>
+    <ul>
+      {{- range site.Menus.footer }}
+      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      {{- end }}
+    </ul>
+  </div>
+</footer>

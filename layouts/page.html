@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{- if in (slice "blog" "case-studies" "sdi") .Section }}
+<article class="post">
+  <header class="post-hero{{ if .Params.image }} post-hero--image{{ end }}">
+    <div class="post-hero__inner">
+      <div class="post-hero__text">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ "" | relURL }}">Home</a> <span aria-hidden="true">/</span> <a href="{{ "news/" | relURL }}">News</a></nav>
+        {{ with .Params.kicker }}<p class="eyebrow">{{ . }}</p>{{ end }}
+        <h1>{{ .Params.headline | default .Title | .RenderString }}</h1>
+        {{ with .Params.lead }}<div class="lead">{{ . | $.RenderString (dict "display" "block") }}</div>{{ end }}
+        <p class="post-hero__meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+          {{- range .GetTerms "categories" }}<a class="chip" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end -}}
+        </p>
+      </div>
+      {{ with .Params.image }}<figure class="post-hero__media">{{ partial "img.html" (dict "src" . "alt" "" "eager" true) }}</figure>{{ end }}
+    </div>
+  </header>
+  <div class="page-content post__content">
+  {{ .Content }}
+  </div>
+  <footer class="post__footer">
+    {{ with .Params.tags }}
+    <p class="post__tags"><span>Tags</span>{{ range $.GetTerms "tags" }}<a class="chip" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</p>
+    {{ end }}
+    <p><a class="button button--secondary button--back" href="{{ "news/" | relURL }}">All news</a></p>
+  </footer>
+</article>
+{{- else }}
+<div class="page-content{{ if not (findRE `class="hero` .Content 1) }} page-content--plain{{ end }}">
+{{- if not (findRE `<h1` .Content 1) }}
+<header class="page-title"><h1>{{ .Title }}</h1></header>
+{{- end }}
+{{ .Content }}
+</div>
+{{- end }}
+{{ end }}

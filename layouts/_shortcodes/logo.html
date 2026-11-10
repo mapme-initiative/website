@@ -1,0 +1,1 @@
+<a class="logos__item" href="{{ .Get "href" }}" target="_blank" rel="noopener">{{ partial "img.html" (dict "src" (.Get "src") "alt" (.Get "alt" | default (.Get "href" | replaceRE `https?://(www\.)?([^/]+).*` "$2"))) }}</a>

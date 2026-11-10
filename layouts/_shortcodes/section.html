@@ -1,0 +1,5 @@
+<section class="section{{ with .Get "bg" }} section--{{ . }}{{ end }}"{{ with .Get "id" }} id="{{ . }}"{{ end }}>
+<div class="section__inner">
+{{ partial "inner.html" (dict "inner" .Inner "page" .Page) }}
+</div>
+</section>
