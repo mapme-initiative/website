@@ -24,11 +24,11 @@ To improve cost-efficiency as well as to enable needs-based and context-sensitiv
 
 {{< /textpic >}}
 
-**Features of the POAS module**
+### Features of the POAS module
 
 The module will enable the SIFC to display the POAS and other map backgrounds (vector/raster) to overlay cadastral data. It can be used to define the rights, responsibilities, and restrictions (RRR) set out in the POAS and its LADM (Land Administration Domain Model) representation. The tool will also be able to issue alerts regarding compliance with topological and easement rules.
 
-**Benefits and challenges**
+### Benefits and challenges
 
 While the benefits of a digital cadaster are numerous, including efficiency, traceability, transparency and, above all, control of land information, the challenges are just as numerous.
 

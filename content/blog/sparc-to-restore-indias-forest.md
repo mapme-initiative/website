@@ -12,11 +12,11 @@ GIZ Update
 
 {{< section >}}
 
-**Igniting India’s Restoration Revolution with SPARC**
+### Igniting India’s Restoration Revolution with SPARC
 
 Under the project Restore, Conserve, and Protect Forest and Tree Cover for NDC in India (RECAP4NDC), the Spatial Potential Assessment for Restoration and Conservation (SPARC) approach provides an integrated methodology to select degraded landscapes for Forest Landscape Restoration (FLR). This combines geospatial technologies, ground-truthing, and multi-parameter assessments to make data-driven decisions in order to zoom into areas with restoration potential across critical ecosystems in Maharashtra, Gujarat, Uttarakhand, and Delhi NCR. This methodology combines certain aspects of the Restoration Opportunities Assessment Methodology (ROAM)[\[1\]](https://gizonline.sharepoint.com/sites/RSGISwithguests-Orga-TeamNetwork/Freigegebene%20Dokumente/Orga-Team/Newsletter/Issue%2010%20Newsletter%202024%2010/text/SPARC_RECAP4NDC.docx#_ftn1) with local ecological knowledge, stakeholder perspectives and sociopolitical situations on the ground.
 
-**Precision Planning: The SPARC Approach to Landscape Selection**
+### Precision Planning: The SPARC Approach to Landscape Selection
 
 SPARC integrates Geographic Information Systems (GIS) with field verification based on a comprehensive assessment matrix. This multi-layered approach ensures that every restoration effort is strategically planned and scientifically validated, setting a new benchmark for landscape restoration in India.
 
@@ -27,14 +27,14 @@ SPARC integrates Geographic Information Systems (GIS) with field verification ba
 
 {{< figure src="/images/fig1-uk.png" >}}
 
-**Regional Highlights: State-Specific Landscape Selection**
+### Regional Highlights: State-Specific Landscape Selection
 
 - Delhi National Capital Region (NCR): Using GIS and stakeholder feedback, SPARC has identified 25,000 hectares within the Aravalli landscape, prioritizing areas that balance ecological restoration with urban pressures.
 - Uttarakhand: In this mountainous region, GIS mapping and ground verification have pinpointed 30,000 hectares of critical watersheds for restoration, addressing degradation factors unique to the Himalayas, such as forest fires, overgrazing, invasive species and uncertain climate regime.
 - Gujarat: By combining geospatial data with field insights, approximately 40,000 hectares have been identified across the Aravali, Vindhya, Satpuda, and Sahyadri ranges, focusing on areas with the highest need and restoration potential.
 - Maharashtra: Across ten districts, 80,000 hectares are set for intervention, selected through a comprehensive analysis that blends remote sensing data, field checks, and stakeholder input.
 
-**The Power of Geospatial and Ground-Based Decision Making**
+### The Power of Geospatial and Ground-Based Decision Making
 
 SPARC stands at the intersection of technology and community, leveraging geospatial intelligence and on-the-ground validation to drive impactful, sustainable restoration. By involving local stakeholders at every step, SPARC ensures that restoration efforts are not only ecologically viable but also socially inclusive, making it a model for landscape restoration across India and beyond.
 

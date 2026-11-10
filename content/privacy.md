@@ -2,7 +2,7 @@
 title: "Privacy"
 ---
 
-## Privacy Policy
+# Privacy Policy
 
 {{< anchor "preamble" >}}
 

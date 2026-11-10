@@ -32,13 +32,13 @@ Contact Information: [<u>info@confluence.eco</u>](mailto:info@confluence.eco)
 
 {{< /cards >}}
 
-**Background**
+### Background
 
 On July 27, 2025, a devastating flood occurred in Yola South Local Government Area (LGA) in Adamawa State in Nigeria. Choci river, a tributary of the Benue river, overflowed its banks, flooding multiple communities. Adamawa State Emergency Management Agency (AdSEMA) reported nine fatalities and dozens of injuries, with more than 550 households affected, resulting in > 3,000 displaced people, primarily across Sabon Pegi, Shagari Phase 2, Lakare, and other settlements ([<u>UN OCHA, 2025</u>](https://www.unocha.org/publications/report/nigeria/nigeria-floods-yola-adamawa-state-flash-update-1-29-july-2025)).
 
 In the days that followed the onset of this event, [<u>Confluence Risk Mitigation</u>](https://www.confluence.eco/) (NGO) performed a rapid risk assessment and led a 2-day field campaign to collect ground truth data and map affected areas. This effort was made possible in coordination with volunteers of Global Shapers Yola, a local affiliation of the World Economic Forum. A parallel 10-day campaign was conducted to translate insights into action on the ground by providing hands-on support to flood-affected residents.
 
-**Rapid risk assessment: Data and methods**
+### Rapid risk assessment: Data and methods
 
 In this context, flood risk describes the combined effects of three components: hazard (flood extent and depth, driven by proximity to rivers and topography), exposure (the presence of people, buildings, and infrastructure in affected areas), and vulnerability (the susceptibility of local building types and households to sustain damage).
 
@@ -65,7 +65,7 @@ The comparison highlights the ability to capture finer-scale terrain features th
 ***Figure 3**. Comparison of 15 m contours generated with DSMs at different spatial resolutions within the area of interest (AOI): ALOS 30 m (A) and NextMap 6 m (B)*
 {.center .muted .small}
 
-**Insights to action - Emergency relief**
+### Insights to action - Emergency relief
 
 While Adamawa is among the riverine states identified for anticipatory action in a government and UN OCHA-coordinated framework to mitigate flood risk, this particular event did not meet the triggers set for the release of pre-arranged funds ([<u>UN OCHA, 2025</u>](https://www.unocha.org/publications/report/nigeria/nigeria-floods-yola-adamawa-state-flash-update-1-29-july-2025)).
 
@@ -83,7 +83,7 @@ To provide immediate relief to flood-affected residents here, 22 volunteers from
 ***Figure 5**. Impressions from relief efforts in the community to support flood-affected residents*
 {.center .muted .small}
 
-**Insights to action - Future flood risk reduction and recommendations**
+### Insights to action - Future flood risk reduction and recommendations
 
 Integration of local knowledge of the area also provided additional insights towards future flood impact reduction and mitigation efforts. In particular, buildings in the affected area are predominantly sandcrete blocks, which are constructed with low conformity to building standards, resulting in moderate to high vulnerability to flooding. Flood depths of about 1 m, which were observed in the aftermath of the event, are likely to have caused significant damage, such as partial or complete collapse of load bearing walls or columns. It is important that local authorities should consider building typology as a risk driver in the context of emergency and disaster risk reduction planning. Residents returning to their homes, especially in areas where high flood depths were observed (e.g., around 1 m) should consult with experts to inspect buildings for structural deformation (e.g., signs of minor or major cracks on load bearing walls). A detailed building vulnerability and damage assessment is also recommended for the area to assess damage potential and mitigation measures over a range of flood depth scenarios.
 

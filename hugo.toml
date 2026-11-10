@@ -9,8 +9,7 @@ disableKinds = ["RSS"]
 [params]
   description = "MAPME is an initiative to provide free and open access to GIS tools and earth observation in international development cooperation."
   tagline = "maps for planning, monitoring & evaluation"
-  contactEmail = "johannes.schielein@kfw.de"
-  contactPhone = "069 74310"
+  contactEmail = "contact@mapme-initiative.org"   # general address, also used by the forms
   linkedin = "https://www.linkedin.com/company/mapme-initiative/"
   youtube = "https://www.youtube.com/@MAPME_initiative"
   newsletterURL = "https://mapme-initiative.us7.list-manage.com/subscribe?u=c70c419e6b487f4b4f280ec53&id=ecf1a8fcc2"

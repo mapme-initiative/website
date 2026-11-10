@@ -180,12 +180,6 @@ LLM-supported coding workflows to generate reproducible reports assessing conser
 
 {{< /column >}}
 
-{{< column >}}
-
-.
-
-{{< /column >}}
-
 {{< /columns >}}
 
 {{< /section >}}
@@ -224,18 +218,6 @@ A quick introduction to MAPME and its ecosystem, including the project, resource
 {{< button href="/files/mapme-one-pager-a4-2.pdf" style="outline" wide="true" >}}Download in A4{{< /button >}}
 
 {{< button href="/files/mapme-one-page-a5.pdf" style="outline" wide="true" >}}Download in A5{{< /button >}}
-
-{{< /column >}}
-
-{{< column >}}
-
-.
-
-{{< /column >}}
-
-{{< column >}}
-
-.
 
 {{< /column >}}
 

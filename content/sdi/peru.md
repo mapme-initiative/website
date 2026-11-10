@@ -10,7 +10,7 @@ categories: ["Case Study"]
 
 {{< section >}}
 
-**Background**
+### Background
 
 The Ministry of Development and Social Inclusion (MIDIS) has proposed the need to implement its Spatial Data Infrastructure (SDI), which allow them to access standardized and updated geographic information produced by affiliated national programs through internet-based interoperability protocols. This would help to improve the management of social interventions with territorial approach.
 
@@ -24,33 +24,33 @@ Two target groups were identified: a) MIDIS officials who will be able to integr
 
 The project´s impact lies in aiding the implementation of the ministry´s spatial data infrastructure, providing management tools to ministry decision-makers, and ultimately enhancing the quality of life for the country´s poorest and most vulnerable populations.
 
-**Roadmap for implementing the MIDIS SDI**
+### Roadmap for implementing the MIDIS SDI
 
 {{< /textpic >}}
 
 {{< figure src="/images/sans-titre.jpg" caption="There are activities in the roadmap labeled as “In House” that MIDIS must carry out since ministerial approval documentation is required." >}}
 
-**Diagnosis of geospatial information**
+### Diagnosis of geospatial information
 
 Several work meetings (32) have been held with the participation of the workgroup members to identify: a) the geospatial data they produce, b) the current process of managing geospatial data from gathering to distribution, c) the TI infrastructure, d) the resources each national program has.
 
-**Feature catalogue**
+### Feature catalogue
 
 This technical document contains definitions and descriptions of the feature types, feature attributes, and feature relationships occurring in one or more sets of geographic data. A standard feature catalogue will reduce costs of data acquisition and provides the structure of the objects to be stored in a geospatial database. 41 geographic objects have been identified, organized into 1 theme and 9 groups.
 
-**Processes to improve the management of geospatial data**
+### Processes to improve the management of geospatial data
 
 After understanding the current geospatial data management processes within the ministry and its national program, it is necessary to develop the improvement processes for managing them in the frame of the SDI. Along several weeks 22 work meetings have been conducted to elaborate on theses improvement processes.
 
 {{< textpic image="/images/picture11.png" side="right" caption="Geoportal architecture" >}}
 
-**Architecture design**
+### Architecture design
 
 This is the first time a ministry decides to implement a SDI using 100% open-source software, ensuring the sustainability of the Geoportal by not requiring payment for commercial licenses.
 
 The National Digital Government Platform of the Presidency of the Council of Ministers has provided the Cloud infrastructure to host the MIDIS Geoportal, ensuring the scalability of resources when needed. The table below describes the minimum requirements for the Geoportal system.
 
-**Database implementation**
+### Database implementation
 
 Based on the feature catalogue the spatial database is implemented using open source PostresSQL/PostGIS.
 
@@ -58,7 +58,7 @@ Based on the feature catalogue the spatial database is implemented using open so
 
 {{< textpic images="/images/picture13.png,/images/picture14.png" side="left" >}}
 
-**Design and implementation of the Geoportal and the geographical viewers**
+### Design and implementation of the Geoportal and the geographical viewers
 
 In the design of the geoportal, the content, icons, colors, and sections are established.
 
@@ -68,15 +68,15 @@ The ministry not only implements one geographic viewer but also requires two add
 
 {{< /textpic >}}
 
-**OGC interoperable services**
+### OGC interoperable services
 
 It has been considered to use Geoserver which display spatial information and promotes interoperability by implementing standards of the Open Geospatial Consortium like the Web Map Service (WMS) and the Web Feature Service (WFS).
 
-**Metadata catalogue**
+### Metadata catalogue
 
 For metadata generation, Geonetwork has been used, which is a catalogue application for managing georeferenced data. It is a powerful open-source tool that provides powerful functionalities for searching and editing metadata. It is based on OGC and ISO standards like the ISO 19115 for metadata and the ISO 19135 for item registration.
 
-**Deploy and testing**
+### Deploy and testing
 
 Currently the Geoportal is in the testing phase, thus the URL cannot be shared yet for the thematic viewer nor the metadata catalogue. After the testing phase is successfully completed, the geoportal will be publicly accessible, and we can share the web address.
 

@@ -2,9 +2,9 @@
 title: "Geo4Impact 2025"
 ---
 
-{{< section >}}
+{{< hero >}}
 
-## Thank You for Making Geo4Impact 2025 a Success! {.center}
+# Thank You for Making Geo4Impact 2025 a Success!
 
 **On May 27–28, 2025, the MAPME Initiative hosted Geo4Impact 2025 at AFD Headquarters in Paris and online, convening researchers, practitioners, and development professionals to exchange knowledge and promote reusable open geospatial solutions that address sector-specific challenges, strengthen project design, and improve evaluation and monitoring for greater impact. The event brought together 90 participants in person from 45 organizations, along with more than 100 remote attendees.**
 
@@ -14,7 +14,7 @@ Participants discovered cutting-edge open-source tools, explored practical examp
 
 {{< button href="https://afd.keepeek.com/plbOB3RE4dj?o=10469" style="primary" >}}Access event recordings here{{< /button >}}
 
-{{< /section >}}
+{{< /hero >}}
 
 {{< section bg="secondary" >}}
 

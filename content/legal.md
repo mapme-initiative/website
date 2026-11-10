@@ -2,65 +2,34 @@
 title: "Legal"
 ---
 
-## Legal Notice
+# Legal Notice
 
 ## Provider
 
-**Kreditanstalt für Wiederaufbau - KfW**
-{.lead}
-
-Palmengartenstrasse 5-9
-{.lead}
-
-60325 Frankfurt am Main/Germany
-{.lead}
-
+**Kreditanstalt für Wiederaufbau - KfW**\
+Palmengartenstrasse 5-9\
+60325 Frankfurt am Main/Germany\
 Phone: + 49 69 7431 – 0
-{.lead}
 
-**Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH.**
-{.lead}
-
-Friedrich-Ebert-Allee 32 + 36
-{.lead}
-
-53113 Bonn/Germany
-{.lead}
-
+**Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH.**\
+Friedrich-Ebert-Allee 32 + 36\
+53113 Bonn/Germany\
 Telefon: +49 228 44 60-0
-{.lead}
 
-**Agence Française de Développement (AFD)**
-{.lead}
-
-5 rue Roland Barthes,
-{.lead}
-
-75598 Paris, Cedex 12/France
-{.lead}
-
+**Agence Française de Développement (AFD)**\
+5 rue Roland Barthes,\
+75598 Paris, Cedex 12/France\
 Tel: +33 1 53 44 31 31.
-{.lead}
 
-**Institut de recherche pour le développement (IRD)**
-{.lead}
-
-44 boulevard de Dunkerque, CS 90009,
-{.lead}
-
-13572 Marseille, Cedex 02/France
-{.lead}
-
+**Institut de recherche pour le développement (IRD)**\
+44 boulevard de Dunkerque, CS 90009,\
+13572 Marseille, Cedex 02/France\
 Tel: +33 4 91 99 92 00
-{.lead}
-
 ## Contact Options
 
 MAPME is an initiative founded and supported by KfW, AFD, GIZ and IRD with contributions from several institutions from the geospatial and scientific community. Get in touch to join the initiative and help increase the usage of geospatial information in development cooperation.
 
 **E-Mail Address:** contact@mapme-initiative.org
-
-**Points of Contact:** Dr. Johannes Schielein (KfW)
 
 ## Liability and Intellectual Property Rights Information
 
@@ -76,40 +45,25 @@ MAPME is an initiative founded and supported by KfW, AFD, GIZ and IRD with contr
 
 **Image Sources and Copyright Notices:**
 
-Homepage
-
-Zagros Mountains, Iran
-
-@usgs / unsplash.com
-
-@luciandachman / unsplash.com
-
+**Homepage**\
+Zagros Mountains, Iran\
+@usgs / unsplash.com\
+@luciandachman / unsplash.com\
 @lingchor / unsplash.com
 
-**Case Study, Laos**
-
-Forest cows
-
-Johannes Schielein
-
-Tropical forest walker
-
-Johannes Schielein
-
+**Case Study, Laos**\
+Forest cows\
+Johannes Schielein\
+Tropical forest walker\
+Johannes Schielein\
 Infographic
 
-**Case Study, Somaliland**
-
-CES
-
-MapTailor
-
-Célestino Amouzou
-
+**Case Study, Somaliland**\
+CES\
+MapTailor\
+Célestino Amouzou\
 Sua Truong
 
-**Case Study, Senegal**
-
-SAED
-
+**Case Study, Senegal**\
+SAED\
 MapTailor

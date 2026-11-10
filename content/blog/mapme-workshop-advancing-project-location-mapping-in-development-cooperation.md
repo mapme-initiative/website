@@ -51,7 +51,7 @@ The second session aimed at co-design optimal process for project-location mappi
 
 {{< column >}}
 
-**Challenges identified included:**
+### Challenges identified included
 
 - Institutional Buy-In and Awareness – Securing management support for mandatory project data collection requires clearly demonstrating the added value of geospatial data and analytics. Without strong institutional commitment, many organizations struggle to obtain timely and complete submissions, revealing gaps in compliance, capacity, and workflow efficiency. As a result, institutions are unable to fully leverage geospatial data for global portfolio analysis and strategic insight.
 - Collaboration and Engagement – Engaging local partners in data collection is challenging, and lack of common workflows and data models across teams and institutions hinders coordination.
